@@ -459,9 +459,9 @@ body {
   cursor: pointer;
 }
 
-.hand-icon {
+/* .hand-icon {
   animation: spin 3s linear infinite;
   animation-delay: 0.2s;
   height: auto;
   width: 100px;
-}
+} */
