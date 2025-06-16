@@ -17,11 +17,11 @@
       <a href="#">About me</a>
       <a href="#">Services</a>
       <a href="#">My Work</a>
-      <a href="#">Contact Me</a>
+      <a href="https://web.whatsapp.com/">Contact Me</a>
     </nav>
     <div class="buttons">
       <div id="theme-toggle"> <button style="border: none; background-color: white; font-size: 30px;">🌙</button> </div> 
-      <a href="#">Contact ✈️</a>
+      <a href="https://web.whatsapp.com/">Contact ✈️</a>
     </div>
   </header>
 
@@ -32,7 +32,7 @@
     <p>I am a frontend developer from Karachi, Pakistan with fresher.</p>
     <div class="buttons">
       <a href="https://web.whatsapp.com/">Contact Me</a>
-      <a href="#">My Resume</a>
+      <a href="./assits/Ghulam taqi Resum.pdf" download="Ghulam Taqi Resume">My Resume</a>
     </div>
   </section>
   <!-- new section -->
@@ -171,14 +171,18 @@
         please use the form below
       </p>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Enter your name" required />
-        <input type="email" placeholder="Enter your email" required />
-        <textarea placeholder="Enter your message" rows="4" required></textarea>
+      <form action="https://formsubmit.co/ghulamtaqi777@gmail.com" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Enter your name" required />
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <textarea placeholder="Enter your message" name="message" rows="4" required></textarea>
+         <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_next" value="https://your-site.com/thank-you.html">
+
         <button type="submit">Send Message</button>
       </form>
     </div>
   </section>
+  
 
   
   
