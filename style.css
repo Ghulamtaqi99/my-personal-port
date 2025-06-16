@@ -277,12 +277,6 @@ nav a:hover, .buttons a:hover {
   box-sizing: border-box;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff;
-  color: #000;
-  line-height: 1.6;
-}
 
 .contact-section {
   display: flex;
@@ -305,19 +299,19 @@ body {
 
 .subheading {
   font-size: 16px;
-  color: white;
+  color: red;
 }
 
 .heading {
   font-size: 32px;
   font-weight: bold;
   margin: 10px 0;
-  color: white;
+  color: red;
 }
 
 .description {
   font-size: 15px;
-  color: white;
+  color: red;
   margin-bottom: 30px;
 }
 
@@ -374,19 +368,19 @@ body {
 
 .subheading {
   font-size: 16px;
-  color: white;
+  color: #444;
 }
 
 .heading {
   font-size: 32px;
   font-weight: bold;
   margin: 10px 0;
-  color: white;
+  color: #333;
 }
 
 .description {
   font-size: 15px;
-  color: white;
+  color: #444;
   margin-bottom: 40px;
   /* font-weight: bold; */
 }
