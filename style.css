@@ -20,6 +20,7 @@ header {
   top: 0;
   background-color: #fff;
   z-index: 999;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
 }
 
 .logo {
@@ -148,6 +149,12 @@ nav a:hover, .buttons a:hover {
   border: 1px solid #ccc;
   border-radius: 15px;
   text-align: center;
+  cursor: pointer;
+}
+
+.card:hover {
+  background-color: red;
+  color: white;
 }
 
 .card h3 {
@@ -165,13 +172,14 @@ nav a:hover, .buttons a:hover {
   gap: 1rem;
   flex-wrap: wrap;
   align-items: center;
+  
 }
 
 .tools img {
-  width: 40px;
-  height: 40px;
+  width: 100px;
+  height: 100px;
   padding: 0.5rem;
-  background: #f1f1f1;
+  /* background: #f1f1f1; */
   border-radius: 10px;
 }
 
@@ -288,7 +296,8 @@ body {
   text-align: center;
   max-width: 600px;
   width: 100%;
-  background: #fff;
+  background: purple;
+  /* color: white; */
   padding: 40px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
@@ -296,18 +305,19 @@ body {
 
 .subheading {
   font-size: 16px;
-  color: #333;
+  color: white;
 }
 
 .heading {
   font-size: 32px;
   font-weight: bold;
   margin: 10px 0;
+  color: white;
 }
 
 .description {
   font-size: 15px;
-  color: #555;
+  color: white;
   margin-bottom: 30px;
 }
 
@@ -334,7 +344,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color: #333;
+  background-color: red;
 }
 body {
   margin: 0;
@@ -364,19 +374,21 @@ body {
 
 .subheading {
   font-size: 16px;
-  color: #444;
+  color: white;
 }
 
 .heading {
   font-size: 32px;
   font-weight: bold;
   margin: 10px 0;
+  color: white;
 }
 
 .description {
   font-size: 15px;
-  color: #555;
+  color: white;
   margin-bottom: 40px;
+  /* font-weight: bold; */
 }
 
 .portfolio-grid {
