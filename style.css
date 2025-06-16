@@ -39,15 +39,15 @@ nav {
 
 nav a, .buttons a {
   text-decoration: none;
-  color: #000;
+  color: #333;
   padding: 0.5rem 1rem;
-  border: 1px solid #000;
+  border: 1px solid #333;
   border-radius: 20px;
   transition: all 0.3s ease;
 }
 
 nav a:hover, .buttons a:hover {
-  background-color: #000;
+  background-color: red;
   color: #fff;
 }
 
@@ -160,11 +160,13 @@ nav a:hover, .buttons a:hover {
 .card h3 {
   margin-bottom: 0.5rem;
   font-weight: 600;
+  color: #333;
 }
 
 .tools-title {
   font-weight: 600;
   margin-bottom: 0.5rem;
+
 }
 
 .tools {
@@ -224,7 +226,7 @@ nav a:hover, .buttons a:hover {
 }
 
 .card:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
 .card .icon {
@@ -471,3 +473,23 @@ body {
   height: auto;
   width: 100px;
 } */
+.footer-card {
+  display: inline-block;
+  justify-content: center;
+  width: 400px;
+
+}
+.footer-main {
+  width: 100%;
+  margin:  130px;
+}
+
+.footer-header {
+  font-size: 60px;
+  color: red;
+  font-weight: bolder;
+}
+.footer-para {
+  font-size: 50px;
+  font-weight: bolder;
+}
