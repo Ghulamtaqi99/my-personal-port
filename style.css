@@ -4,10 +4,24 @@
   box-sizing: border-box;
   font-family: 'Inter', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background-color: #fff;
   color: #000;
+  opacity: 0;
+  transition: opacity 2s ease-in ;
+}
+body {
+  opacity: 0;
+  transition: opacity 2s ease-in ;
+
+}
+
+body.loaded {
+  opacity: 1;
 }
 
 header {
@@ -256,6 +270,85 @@ nav a:hover, .buttons a:hover {
   color: #007BFF;
 }
 
+.contact {
+  padding: 40px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 40px;
+  color: #00b37a;
+}
+
+.hit-me {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.boxess {
+  background-color: #111;
+  border-radius: 10px;
+  width: 250px;
+  color: #333;
+  padding: 5px;
+  margin-left: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* gap: px; */
+  transition: transform 0.3s;
+}
+
+.boxess:hover {
+  transform: translateY(-10px);
+  background-color: red;
+}
+
+.box i {
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.box h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  background: #555;
+}
+
 
 @media (max-width: 768px) {
   nav {
@@ -457,13 +550,14 @@ body {
 
 /* Logo spin class */
 .logo-spin {
-  width: 100px; /* Adjust as needed */
+  width: 50px; /* Adjust as needed */
   height: auto;
   animation: spin 7s linear infinite;
   animation-delay: 0.2s;
 }
 .logo-spin:hover {
   animation-play-state: paused;
+  
   cursor: pointer;
 }
 
@@ -473,27 +567,79 @@ body {
   height: auto;
   width: 100px;
 } */
-.footer-card {
-  display: inline-block;
+
+
+.contact {
+  padding: 40px;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 40px;
+  color: #00b37a;
+}
+
+.hit-me {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.contact-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
   justify-content: center;
-  width: 400px;
-  /* background-color: #555; */
-
-}
-.footer-main {
-  width: 100%;
-  padding:  50px;
-  padding-left: 92px;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding: 10px 0;
 }
 
-.footer-header {
-  font-size: 60px;
-  color: red;
-  font-weight: bolder;
+.box {
+  background-color: #111;
+  border-radius: 10px;
+  color: #333;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s;
 }
-.footer-para {
-  font-size: 60px;
-  font-weight: bolder;
+
+.box:hover {
+  transform: translateY(-5px);
+}
+
+.box i {
+  font-size: 40px;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.box h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.box p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 14px;
+  color: #333;
+}
+
+footer a {
+  color: #333;
+  text-decoration: none;
+  
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+footer a:hover {
+  background: #555;
 }

@@ -17,3 +17,8 @@ currmode.addEventListener("click", () => {
   }
   console.log(changemode)
 })
+
+// Add this inside script.js
+window.addEventListener("load", () => {
+  document.body.classList.add("loaded");
+});
