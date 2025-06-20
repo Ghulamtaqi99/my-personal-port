@@ -576,7 +576,7 @@ body {
 
 .contact h1 {
   font-size: 40px;
-  color: #00b37a;
+  color: red;
 }
 
 .hit-me {
@@ -584,35 +584,29 @@ body {
   font-weight: bold;
   margin-bottom: 40px;
 }
-
-.contact-boxes {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+.contact-boxess {
+  display: flex;
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  justify-content: center;
-  padding: 10px 0;
+  max-width: 1000px;
+  margin: 0 auto;
+  /* flex-wrap: wrap; */
+  padding: 20px 0;
 }
 
-.box {
+.boxess {
   background-color: #111;
   border-radius: 10px;
-  color: #333;
   padding: 20px;
   display: flex;
   align-items: center;
   gap: 20px;
+  width: 100%;
   transition: transform 0.3s;
 }
 
-.box:hover {
+.boxess:hover {
   transform: translateY(-5px);
-}
-
-.box i {
-  font-size: 40px;
-  color: white;
-  padding: 10px;
-  border-radius: 50%;
 }
 
 .box h3 {
@@ -636,10 +630,24 @@ footer a {
   color: #333;
   text-decoration: none;
   
+  
   padding: 5px 10px;
   border-radius: 5px;
 }
 
 footer a:hover {
-  background: #555;
+  background: red;
+  transition: transform 0.3s;
+}
+
+@media (max-width: 768px) {
+  .contact-boxess {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-boxess {
+    grid-template-columns: 1fr;
+  }
 }
